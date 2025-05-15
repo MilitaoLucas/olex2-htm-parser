@@ -1,0 +1,51 @@
+{
+  "name": "tree-sitter-olex2htm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "bindings/node",
+  "scripts": {
+    "install": "node-gyp-build",
+    "prestart": "tree-sitter build --wasm",
+    "start": "tree-sitter playground",
+    "test": "node --test bindings/node/*_test.js"
+  },
+  "keywords": [],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**",
+    "*.wasm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tree-sitter-cli": "^0.25.4",
+    "prebuildify": "^6.0.1"
+  },
+  "dependencies": {
+    "tree-sitter-html": "^0.23.2",
+    "node-gyp-build": "^4.8.1"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.1"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
+  },
+  "tree-sitter": [
+    {
+      "scope": "text.html.olex2htm",
+      "file-types": [
+        "html",
+        "htm"
+      ],
+      "injection-regex": "olex2htm"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[submodule "tree-sitter-html"]
+	path = tree-sitter-html
+	url = ./tree-sitter-html

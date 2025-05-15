@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "olex2htm",
+      "camelcase": "Olex2htm",
+      "title": "Olex2htm",
+      "scope": "source.olex2htm",
+      "file-types": [
+        "htm"
+      ],
+      "injection-regex": "^olex2htm$",
+      "class-name": "TreeSitterOlex2htm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Olex2htm grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Lucas Militão",
+        "email": "lucas.milito@usp.br"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/MilitaoLucas/olex2-htm-parser.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
